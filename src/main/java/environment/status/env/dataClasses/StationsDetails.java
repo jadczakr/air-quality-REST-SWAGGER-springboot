@@ -5,15 +5,15 @@ public class StationsDetails {
 	
 	private int stationId;
 	private String city;
-	private String gegrLat;
-	private String gegrLon;
+	private float gegrLat;
+	private float gegrLon;
 	private String addressStreet;
 	private String airQualityStatus;
 	
 	public StationsDetails(){}
 	
 	
-	public StationsDetails(int stationId, String city, String gegrLat, String gegrLon, String addressStreet,
+	public StationsDetails(int stationId, String city, float gegrLat, float gegrLon, String addressStreet,
 			String airQualityStatus) {
 		super();
 		this.stationId = stationId;
@@ -45,22 +45,22 @@ public class StationsDetails {
 	}
 
 
-	public String getGegrLat() {
+	public float getGegrLat() {
 		return gegrLat;
 	}
 
 
-	public void setGegrLat(String gegrLat) {
+	public void setGegrLat(float gegrLat) {
 		this.gegrLat = gegrLat;
 	}
 
 
-	public String getGegrLon() {
+	public float getGegrLon() {
 		return gegrLon;
 	}
 
 
-	public void setGegrLon(String gegrLon) {
+	public void setGegrLon(float gegrLon) {
 		this.gegrLon = gegrLon;
 	}
 

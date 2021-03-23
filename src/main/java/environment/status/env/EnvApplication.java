@@ -5,6 +5,8 @@ import java.util.Collections;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -39,9 +41,15 @@ public class EnvApplication {
 							"air quality of Polish's cities \n Data source: http://powietrze.gios.gov.pl/",
 						   "1.0",
 						   "",
-						   new Contact("Rafal","www.google.pl","rafal.jadczak97@gmail.com"),
+						   new Contact("Rafal","https://www.google.pl","rafal.jadczak97@gmail.com"),
 						   "open-source",
 						   "",
 						   Collections.emptyList());
 	}
+	
+	
+
+	
+	
+	
 }

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -131,8 +132,8 @@ public class restController {
 		{
 			stationsDetailsList.add(new StationsDetails(p.getId(),
 														p.getCity().getName(),
-														p.getGegrLat(),
-														p.getGegrLon(),
+														Float.parseFloat(p.getGegrLat()),
+														Float.parseFloat(p.getGegrLon()),
 														p.getAddressStreet(),
 														callMethodGetAirQualityById(p.getId()).getStIndexLevel().getIndexLevelName()));
 		}
